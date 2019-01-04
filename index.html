@@ -1,3 +1,12 @@
-<div>
-<span>Under Construction</span>
-<div>
+---
+layout: page
+title: chris spalding
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}"> {{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
